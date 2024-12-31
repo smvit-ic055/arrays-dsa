@@ -24,17 +24,17 @@ notepad f1.txt
 git init
 git add .
 git commit -m "Initial commit"
-git checkout -b featurebranch1
-git stash
+git checkout -b fb1
+git stash save "changes in fb1"
 git checkout master
-git checkout -b featurebranch2
+git checkout -b fb2
 git add .
-git commit -m "applied stashed changes"
 git stash apply
+git commit -m "applied stashed changes"
 git checkout master
-git merge featurebranch2
+git merge fb2
 git stash list
-git stash drop stash@{0}
+git stash drop stash@{0} or git stash pop
 -------PGM4-------------
 git clone <link>
 -------PGM5-------------
