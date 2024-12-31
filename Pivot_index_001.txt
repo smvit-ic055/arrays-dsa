@@ -25,6 +25,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git checkout -b fb1
+[modify the file and stash it]
 git stash save "changes in fb1"
 git checkout master
 git checkout -b fb2
