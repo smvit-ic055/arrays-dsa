@@ -20,22 +20,22 @@ git add .
 git commit -m "my featureBranch commit"
 git checkout master
 -------PGM3------------
-notepad f1.txt
-git init
-git add .
-git commit -m "Initial commit"
+[create a new file]
+[git init , add and commit it]
 git checkout -b fb1
-[modify the file and stash it]
-git stash save "changes in fb1"
+[modify the file]
+git stash save "saving in fb1"
 git checkout master
 git checkout -b fb2
-git add .
 git stash apply
-git commit -m "applied stashed changes"
+git add .
+git commit -m "saving changes in fb2"
+git stash apply
 git checkout master
 git merge fb2
 git stash list
-git stash drop stash@{0} or git stash pop
+git stash drop 0
+
 -------PGM4-------------
 git clone <link>
 -------PGM5-------------
